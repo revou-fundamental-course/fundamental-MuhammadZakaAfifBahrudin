@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo"></div>
+        <div class="toggle-menu" id="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#profile" class="nav-link">Profile</a></li>
+            <li><a href="#message" class="nav-link">Mesagge US</a></li>
+            <li><a href="https://www.instagram.com/_zakfif" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- content -->
+    <div class="bg">
+        <div class="container-content">
+            <article id="article">
+                <h1>Hi<span id="name2">👋</span>, Welcome To Website Kopi Nusantara</h1>
+            </article>
+        </div>
+        <div class="container">
+            <img id="carousel-image" src="asset/product1.jpg" alt="">
+            <button id="next-button" onclick="nextImage()">></button>
+        </div>
+    </div>
+
+    <!-- content-profile -->
+    <div id="profile">
+        <div class="container-bg">
+            <article>
+                <div class="content">
+                    <h1 class="text">Profile</h1>
+                    <p><a>Kopi Nusantara</a>adalah perusahaan kopi yang berdedikasi untuk menyajikan kopi berkualitas
+                        tinggi
+                        yang
+                        dipetik langsung dari perkebunan kopi terbaik di Indonesia. Berdiri sejak tahun 2010, kami
+                        berkomitmen
+                        untuk membawa cita rasa otentik kopi Nusantara kepada para pecinta kopi di seluruh dunia.
+                        Berawal
+                        dari
+                        usaha kecil di sebuah desa di pegunungan Jawa, kami mulai dengan menjalin kemitraan dengan
+                        petani
+                        lokal
+                        untuk mendapatkan biji kopi berkualitas tinggi. Dengan semangat dan dedikasi, kami berkembang
+                        menjadi
+                        salah satu perusahaan kopi terkemuka di Indonesia.</p>
+                    <h1><a>Visi</a></h1>
+                    <p><a>Kopi Nusantara bercita-cita untuk menjadi pemimpin pasar dalam industri kopi, tidak hanya di
+                            Indonesia
+                            tetapi juga di kancah internasional. Kami memiliki visi untuk menyajikan kopi berkualitas
+                            tinggi
+                            yang mampu menggugah selera dan memberikan pengalaman menikmati kopi yang otentik dan tak
+                            terlupakan. Dalam mencapai visi ini, kami berkomitmen untuk terus berinovasi, meningkatkan
+                            kualitas
+                            produk, dan menjaga hubungan yang harmonis dengan petani kopi lokal. Kami juga ingin menjadi
+                            perusahaan yang dikenal karena tanggung jawab sosial dan lingkungannya, serta berkontribusi
+                            positif
+                            terhadap kesejahteraan masyarakat dan pelestarian alam.</a></p>
+                    <h1><a>Misi</a></h1>
+                    <p><a>1. Menghasilkan dan Menyediakan Kopi Berkualitas Tinggi</a></p>
+                    <p><a>2. Memberdayakan Petani Kopi Lokal</a></p>
+                    <p><a>3. Mengembangkan Produk Inovatif</a></p>
+                    <p><a>4. Menjaga Kepuasan Pelanggan</a></p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+
+    <!-- message US -->
+    <div class="message">
+        <div class="container-content" id="message">
+            <article>
+                <h1>Mesagge US</h1>
+            </article>
+        </div>
+        <div class="group">
+            <div id="form" class="form-group">
+                <form id="name-form">
+                    <p>Nama:</p>
+                    <input type="text" placeholder="Nama" id="name-input" name="full-name" required />
+                    <br />
+                    <p>Tanggal Lahir:</p>
+                    <input type="date" placeholder="Tanggal Lahir" id="date-input" name="birth-date" />
+                    <br />
+                    <p>Jenis Kelamin:</p>
+                    <input type="radio" id="gender-male" name="gender" value="male" />
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="gender-female" name="gender" value="female" />
+                    <label for="female">Perempuan</label>
+                    <br />
+                    <p>Pesan:</p>
+                    <textarea id="pesan" placeholder="Pesan"></textarea>
+                    <br />
+                    <button id="submit" type="button" onclick="validateForm();">KIRIM</button>
+                    <button><a href="#article" onclick="location.reload(); return false;">RELOAD</a></button>
+                </form>
+            </div>
+
+            <!-- content-message -->
+            <div class="container-form">
+                <p>Nama: <span id="name1"></span></p>
+                <p>Tanggal Lahir: <span id="date"></span></p>
+                <p>Jenis Kelamin: <span id="gender"></span></p>
+                <p>Pesan: <span id="messages"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
